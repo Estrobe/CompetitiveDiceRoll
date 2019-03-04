@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
+<head>
+ <link href="http://allfont.net/allfont.css?fonts=anime-ace" rel="stylesheet" type="text/css" />
+ <title>Competitive Dice</title>
+</head>
 <style>
+body {
+        font-family: 'Anime Ace', arial;
+        font-size: 20px;
+        text-shadow: 4px 4px 4px #aaa;
+      }
 button {
   background-color: rgb(82, 186, 179);
   border-radius: 6px;
@@ -11,10 +20,32 @@ button {
   width: 200px;
   cursor: pointer;
 }
+
 </style>
 <body>
+<h1 id="p1">Player 1 rolled:   </h1>
+
+<script type="text/javascript">
+        document.write(varOne);
+      </script>
+	  
+	  
+<h1 id="p1">Player 2 rolled:   </h1>
+
+<script type="text/javascript">
+        document.write(varTwo);
+      </script>
+	  
+	  
 <button id="rollOne" onclick="rollOne()" class="btn" >Roll for Player One</button>
 <button id="rollTwo" onclick="rollTwo()" class="btn" >Roll for Player Two</button>
 
 </body>
+<script>
+function rollOne() {
+	var varOne = Math.floor(Math.random(6))
+}
+function rollTwo() {
+	
+}
 </html>
